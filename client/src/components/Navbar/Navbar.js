@@ -8,17 +8,21 @@ const Navbar = () => {
     <nav className="navbar-background">
       <div className="navbar-options">
         <div className="d-flex justify-content-center align-items-center">
-          <img src={NavLogo} class="img-fluid" alt="Responsive image" />
+          <a href="/">
+            <img src={NavLogo} class="img-fluid" alt="Responsive image" />
+          </a>
         </div>
 
         <ul className="navbar-pages">
-          <a>Home</a>
-          <a>Headphones</a>
-          <a>Speakers</a>
-          <a>Earphones</a>
+          <a href="/">Home</a>
+          <a href="/">Headphones</a>
+          <a href="/">Speakers</a>
+          <a href="/">Earphones</a>
         </ul>
         <div className="d-flex justify-content-center align-items-center">
-          <img src={IconCart}></img>
+          <a href="/">
+            <img src={IconCart}></img>
+          </a>
         </div>
       </div>
     </nav>

@@ -20,11 +20,15 @@
 }
 
 .navbar-pages {
-    color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 0;
+
+}
+
+.navbar-pages a {
+    color: white;
     text-transform: uppercase;
 }
 
