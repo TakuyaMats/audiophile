@@ -1,0 +1,25 @@
+.navbar-background {
+    height: 7vh;
+    background-color: black;
+
+}
+
+.navbar-options {
+    height: 97%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 0 10% 0 10%;
+    border-bottom: 1px solid grey;
+
+
+}
+
+
+.navbar-pages {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0;
+
+}
