@@ -1,40 +1,115 @@
-.navbar-background {
+.navbar {
     height: 10vh;
-    background-color: black;
 
+    padding-bottom: 0;
 }
+
+.bg-dark {
+    background-color: black !important;
+}
+
 
 .navbar-options {
     height: 97%;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    margin: 0 10% 0 10%;
+    /* margin: 0 10% 0 10%; */
     border-bottom: 1px solid grey;
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
     font-size: 13px;
     line-height: 25px;
     letter-spacing: 2px;
+    width: 100%;
 
 
 }
 
 .navbar-pages {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around !important;
     align-items: center;
     margin-bottom: 0;
+    width: 100%;
 
 }
 
-.navbar-pages a {
+.navbar-pages li {
     color: white;
     text-transform: uppercase;
+    list-style: none;
+
 }
 
+.navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .navbar-cart {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+@media (max-width: 992px) {
+
+    .navbar-options {
+        grid-template-columns: 15% 2fr 10%;
+    }
+
+    .navbar-logo {
+        grid-column: 2/3;
+        grid-row: 1;
+        justify-content: left;
+    }
+
+    .navbar-pages {
+        flex-direction: column;
+    }
+
+    .navbar-collapse ul {
+        padding-inline-start: 0;
+    }
+
+    .navbar-pages li {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 10vh;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 40%;
+        height: 100%;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed~.navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .navbar-logo {
+        justify-content: center;
+    }
+
 }

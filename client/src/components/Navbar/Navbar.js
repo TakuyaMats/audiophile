@@ -5,27 +5,39 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar-background">
-      <div className="navbar-options">
-        <div className="d-flex justify-content-center align-items-center">
-          <a href="/">
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div className="navbar-options">
+          <a className="navbar-logo" href="/">
             <img src={NavLogo} class="img-fluid" alt="Responsive image" />
           </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse bg-dark " id="navbarCollapse">
+            <ul class="navbar-pages">
+              <li href="/">Home</li>
+              <li href="/">Headphones</li>
+              <li href="/">Speakers</li>
+              <li href="/">Earphones</li>
+            </ul>
+          </div>
+          <div className="d-flex justify-content-center align-items-center">
+            <a href="/">
+              <img src={IconCart}></img>
+            </a>
+          </div>
         </div>
-
-        <ul className="navbar-pages">
-          <a href="/">Home</a>
-          <a href="/">Headphones</a>
-          <a href="/">Speakers</a>
-          <a href="/">Earphones</a>
-        </ul>
-        <div className="d-flex justify-content-center align-items-center">
-          <a href="/">
-            <img src={IconCart}></img>
-          </a>
-        </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 
