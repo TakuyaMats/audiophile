@@ -22,6 +22,7 @@
   "homepage": "https://github.com/TakuyaMats/audiophile#readme",
   "dependencies": {
     "axios": "^0.27.2",
+    "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "joi": "^17.6.0",
     "joi-objectid": "^4.0.2",
