@@ -8,13 +8,16 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
+    console.log(req);
     const { error } = validate(req.body);
     if (error) return res.status(400).send(error.details[0].message)
 
     let customer = new Customer({ 
-        name: req.body.name,
-        phone: req.body.phone
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        email: req.body.email
     });
+
     customer = await customer.save();
 
     res.send(customer);
