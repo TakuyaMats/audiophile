@@ -2,6 +2,7 @@ const Joi = require('joi');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const { Category } = require('./category');
+const { Stock } = require('./stock');
 
 const Product = mongoose.model('Product', new Schema({
     slug: {
