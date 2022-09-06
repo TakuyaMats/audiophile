@@ -1,0 +1,57 @@
+.hero {
+    margin: 0;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+}
+
+.hero-content {
+    grid-column: 1/ 2;
+    margin: 25vh;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hero-content p {
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 10px;
+    text-align: left;
+    color: grey;
+}
+
+.hero-content h1 {
+    font-family: Manrope;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.hero-content h3 {
+    font-family: Manrope;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: grey;
+}
+
+.hero-content button {
+    background-color: #FBAF85;
+    color: white;
+    text-transform: uppercase;
+    width: 50%;
+    height: 15%;
+    border-radius: 0;
+
+}
