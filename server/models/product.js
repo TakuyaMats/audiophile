@@ -63,7 +63,7 @@ function validateProduct(product){
         description: Joi.string().min(10).max(5000).required(),
         features: Joi.string().min(10).max(9000).required(),
         includes: Joi.string().required()
-        // stockId: Joi.objectId().required()
+        // includes: Joi.objectId().required()
     });
 
     const validation = schema.validate(product);
