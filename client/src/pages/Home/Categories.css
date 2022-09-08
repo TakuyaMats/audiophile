@@ -72,3 +72,39 @@
     opacity: 1;
 
 }
+
+@media (max-width: 992px) {
+    .categories {
+        height: 40vh;
+        gap: 1vh;
+        padding: 5vh 5vh 5vh 5vh;
+    }
+
+    .card-background {}
+
+    .card-details h3 {
+        font-family: Manrope;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 1.0714285373687744px;
+        text-align: center;
+
+    }
+
+    .card-details p {
+        font-family: Manrope;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-align: left;
+
+    }
+
+    .card-details img {
+        width: auto;
+        height: 18vh;
+    }
+
+}
