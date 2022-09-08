@@ -5,14 +5,19 @@ import TabletImage from "../../assets/home/tablet/image-header.jpg";
 import MobileImage from "../../assets/home/mobile/image-header.jpg";
 
 const Hero = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
+  const [isTablet, setIsTablet] = useState(
+    window.innerWidth < 992 && window.innerWidth > 420
+  );
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 420);
 
   useEffect(() => {
     window.addEventListener(
       "resize",
       () => {
-        const ismobile = window.innerWidth < 992;
+        const istablet = window.innerWidth < 992 && window.innerWidth > 420;
+        const ismobile = window.innerWidth < 420;
         if (ismobile !== isMobile) setIsMobile(ismobile);
+        if (istablet !== isTablet) setIsTablet(istablet);
       },
       false
     );
@@ -21,6 +26,8 @@ const Hero = () => {
   let backgroundImage;
 
   if (isMobile) {
+    backgroundImage = MobileImage;
+  } else if (isTablet) {
     backgroundImage = TabletImage;
   } else {
     backgroundImage = Image;
