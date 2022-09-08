@@ -55,3 +55,124 @@
     border-radius: 0;
 
 }
+
+@media (max-width: 992px) {
+    .hero {
+        margin: 0;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 75vh;
+        background-position-x: 60%;
+        background-position-y: 100%;
+
+    }
+
+    .hero-content {
+        height: 50%;
+        width: 50%;
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-family: Manrope;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: 2px;
+        text-align: center;
+
+
+    }
+
+    .hero-content h3 {
+        font-family: Manrope;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0px;
+        text-align: center;
+
+
+    }
+
+    .hero-content p {
+        font-family: Manrope;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 10px;
+        text-align: center;
+    }
+
+    .hero-content button {
+        text-align: center;
+        width: 15vh;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .hero {
+        margin: 0;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: 100%;
+        background-position-x: 50%;
+        background-position-y: 90%;
+        background-repeat: no-repeat;
+
+    }
+
+    .hero-content {
+        height: 75%;
+        width: 75%;
+        margin: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-family: Manrope;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 1.2857142686843872px;
+        text-align: center;
+
+
+
+    }
+
+    .hero-content h3 {
+        font-family: Manrope;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .hero-content p {
+        font-family: Manrope;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 10px;
+        text-align: center;
+
+    }
+
+    .hero-content button {
+        text-align: center;
+        width: 25vh;
+    }
+
+}
