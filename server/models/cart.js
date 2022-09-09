@@ -2,7 +2,7 @@ const Joi = require('joi');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 // const original_id = ObjectId();
-// const { Product } = require('./product')
+// const { CartItem } = require('./CartItem')
 // const { Customer } = require('./customer')
 
 
@@ -10,7 +10,7 @@ const Schema = mongoose.Schema;
 
 const Cart = mongoose.model
     ('Cart', new Schema({
-        productId: {
+        cartItemId: {
             type: String,
             // required: true
         },
@@ -22,7 +22,7 @@ const Cart = mongoose.model
 
 function validateCart(cart){
     const schema = Joi.object({
-        productId: Joi.string(),
+        cartItemId: Joi.string(),
         userId: Joi.string()
     })
 

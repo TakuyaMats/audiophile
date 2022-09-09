@@ -12,7 +12,7 @@ router.post('/', async (req, res) => {
     if (error) return res.status(400).send(error.details[0].message)
 
     let cart = new Cart({
-        productId: req.body.productId,
+        cartItemId: req.body.cartItemId,
         userId: req.body.userId
     });
 
