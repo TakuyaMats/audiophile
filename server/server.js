@@ -6,10 +6,12 @@ const mongoose = require('mongoose');
 const app = express();
 const customers = require('./routes/customers');
 const products = require('./routes/products');
+const carts = require('./routes/cart');
 
 app.use(express.json());
 app.use('/api/customers', customers);
 app.use('/api/products', products);
+app.use('/api/cart', carts);
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/audiophile')
     .then(() =>  console.log('Connected to MongoDB...'))
