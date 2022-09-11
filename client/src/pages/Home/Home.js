@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar/Navbar";
 // import Image from "../assets/product-xx59-headphones/desktop/image-gallery-1.jpg";
 import Hero from "./Hero.js";
 import Categories from "./Categories.js";
+import Products from "./Products";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Categories />
+      <Products />
     </div>
   );
 };
