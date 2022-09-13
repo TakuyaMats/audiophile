@@ -311,8 +311,8 @@
 @media (max-width: 420px) {
 
     .home-products {
-        height: 150vh;
-        grid-template-rows: 45% 25% 15% 15%;
+        height: 200vh;
+        grid-template-rows: 40% 25% 15% 15%;
     }
 
     .home-product-1 {
