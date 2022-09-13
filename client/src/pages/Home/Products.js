@@ -23,43 +23,32 @@ const Products = () => {
   const [homeProduct1, setHomeProduct1] = useState(DesktopHomeProduct1);
   const [homeProduct2, setHomeProduct2] = useState(DesktopHomeProduct2);
 
+  const handleSize = () => {
+    const istablet = window.innerWidth > 420 && window.innerWidth < 992;
+    const ismobile = window.innerWidth < 420;
+    const isdesktop = window.innerWidth > 992;
+    if (ismobile) {
+      setIsMobile(ismobile);
+      setHomeProductImage(MobileHomeProductImage);
+      setHomeProduct1(MobileHomeProduct1);
+      setHomeProduct2(MobileHomeProduct2);
+    } else if (istablet) {
+      setIsTablet(istablet);
+      setHomeProductImage(TabletHomeProductImage);
+      setHomeProduct1(TabletHomeProduct1);
+      setHomeProduct2(TabletHomeProduct2);
+    } else if (isdesktop) {
+      setIsDesktop(isdesktop);
+      setHomeProductImage(DesktopHomeProductImage);
+      setHomeProduct1(DesktopHomeProduct1);
+      setHomeProduct2(DesktopHomeProduct2);
+    }
+  };
+
   useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => {
-        const istablet = window.innerWidth > 420 && window.innerWidth < 992;
-        const ismobile = window.innerWidth < 420;
-        const isdesktop = window.innerWidth > 992;
-        if (ismobile) {
-          setIsMobile(ismobile);
-          setHomeProductImage(MobileHomeProductImage);
-          setHomeProduct1(MobileHomeProduct1);
-          setHomeProduct2(MobileHomeProduct2);
-        } else if (istablet) {
-          setIsTablet(istablet);
-          setHomeProductImage(TabletHomeProductImage);
-          setHomeProduct1(TabletHomeProduct1);
-          setHomeProduct2(TabletHomeProduct2);
-        } else if (isdesktop) {
-          setIsDesktop(isdesktop);
-          setHomeProductImage(DesktopHomeProductImage);
-          setHomeProduct1(DesktopHomeProduct1);
-          setHomeProduct2(DesktopHomeProduct2);
-        }
-      },
-      false
-    );
+    window.addEventListener("load", handleSize, false);
+    window.addEventListener("resize", handleSize, false);
   }, []);
-
-  // let backgroundImage;
-
-  // if (isMobile) {
-  //   backgroundImage = MobileImage;
-  // } else if (isTablet) {
-  //   backgroundImage = TabletImage;
-  // } else {
-  //   backgroundImage = Image;
-  // }
 
   return (
     <div className="home-products">

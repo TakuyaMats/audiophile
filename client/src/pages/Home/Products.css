@@ -307,3 +307,110 @@
 
 
 }
+
+@media (max-width: 420px) {
+
+    .home-products {
+        height: 150vh;
+        grid-template-rows: 45% 25% 15% 15%;
+    }
+
+    .home-product-1 {
+        background-size: contain;
+    }
+
+    .home-product-1-details {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10% 0 10%;
+    }
+
+
+    .home-product-1-details h1 {
+        font-family: Manrope;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 1.2857142686843872px;
+        text-align: center;
+
+
+    }
+
+    .home-product-1-details p {
+        font-family: Manrope;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .home-product-1-details button {
+        font-family: Manrope;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-align: center;
+        width: 70%;
+        height: 6vh;
+    }
+
+    .home-product-2-details {
+        grid-column: 1 / -1;
+        padding: 5%;
+        justify-content: center;
+    }
+
+    .home-product-2-details button {
+        width: 70%;
+        height: 6vh;
+    }
+
+    .home-product-2-details h2 {
+        font-family: Manrope;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 2px;
+        text-align: left;
+
+
+
+    }
+
+    .home-product-2-details p {
+        font-family: Manrope;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .home-product-image {
+        grid-column: 1 / -1;
+    }
+
+    .home-product-3 {
+        grid-row: 4 / 5;
+        grid-column: 1 / -1;
+    }
+
+    .home-product-3-details {
+        padding-left: 10%;
+    }
+
+    .home-product-3-details h2 {
+        font-family: Manrope;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 2px;
+        text-align: left;
+    }
+
+}
