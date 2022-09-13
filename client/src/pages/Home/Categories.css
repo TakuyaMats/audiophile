@@ -109,7 +109,8 @@
 
 @media (max-width: 420px) {
     .categories {
-        height: 100vh;
+        padding-bottom: 0;
+        height: 95vh;
         display: flex;
         flex-direction: column;
     }
