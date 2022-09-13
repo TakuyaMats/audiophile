@@ -147,6 +147,7 @@
 }
 
 .home-product-image img {
+    height: 100%;
     width: 100%;
     border-radius: 5px;
 }
@@ -190,5 +191,119 @@
     border: 1px solid black !important;
     height: 25%;
     width: 80%;
+}
+
+@media (max-width: 992px) {
+
+    .home-products {
+        height: 120vh;
+        padding: 0 5vh 5vh 5vh;
+        grid-template-rows: 55% 25% 20%;
+        gap: 2vh;
+    }
+
+    .home-product-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .home-product-1-image img {
+        height: 20vh;
+        width: auto;
+        margin: 5vh 0 0 0;
+        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+        ;
+    }
+
+    .home-product-1-details {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 25% 0 25%;
+    }
+
+
+    .home-product-1-details h1 {
+        font-family: Manrope;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: 2px;
+        text-align: center;
+
+    }
+
+    .home-product-1-details p {
+        font-family: Manrope;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 0px;
+        text-align: center;
+
+    }
+
+    .home-product-2 {
+        height: 100%;
+    }
+
+    .home-product-2-image img {
+        height: 100%;
+    }
+
+    .home-product-2-image {
+        height: 100%;
+    }
+
+    .home-product-3-details button {
+        font-family: Manrope;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-align: left;
+
+    }
+
+    .home-product-2-details h2 {
+        font-family: Manrope;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 2px;
+        text-align: left;
+
+
+    }
+
+    .home-product-2-details button {
+        height: 25%;
+        width: 65%;
+    }
+
+    .home-product-3-details h2 {
+        font-family: Manrope;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 2px;
+        text-align: center;
+
+    }
+
+    .home-product-3-details button {
+        font-family: Manrope;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 1px;
+        text-align: center;
+        width: 65%;
+        height: 40%;
+    }
+
 
 }
