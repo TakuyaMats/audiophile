@@ -4,6 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Hero from "./Hero.js";
 import Categories from "./Categories.js";
 import Products from "./Products";
+import About from "./About";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Hero />
       <Categories />
       <Products />
+      <About />
     </div>
   );
 };
