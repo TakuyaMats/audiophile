@@ -1,8 +1,38 @@
-import React from "react";
-import AboutImage from "../../assets/shared/desktop/image-best-gear.jpg";
+import { React, useState, useEffect } from "react";
+import DesktopAboutImage from "../../assets/shared/desktop/image-best-gear.jpg";
+import TabletAboutImage from "../../assets/shared/tablet/image-best-gear.jpg";
+import MobileAboutImage from "../../assets/shared/mobile/image-best-gear.jpg";
 import "./About.css";
 
 const About = () => {
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 992);
+  const [isTablet, setIsTablet] = useState(
+    window.innerWidth < 992 && window.innerWidth > 420
+  );
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 420);
+
+  const [aboutImage, setHomeProductImage] = useState(DesktopAboutImage);
+  const handleSize = () => {
+    const istablet = window.innerWidth > 420 && window.innerWidth < 992;
+    const ismobile = window.innerWidth < 420;
+    const isdesktop = window.innerWidth > 992;
+    if (ismobile) {
+      setIsMobile(ismobile);
+      setHomeProductImage(MobileAboutImage);
+    } else if (istablet) {
+      setIsTablet(istablet);
+      setHomeProductImage(TabletAboutImage);
+    } else if (isdesktop) {
+      setIsDesktop(isdesktop);
+      setHomeProductImage(DesktopAboutImage);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("load", handleSize, false);
+    window.addEventListener("resize", handleSize, false);
+  }, []);
+
   return (
     <div className="about">
       <div className="about-description">
@@ -19,7 +49,7 @@ const About = () => {
         </p>
       </div>
       <div className="about-image">
-        <img src={AboutImage} />
+        <img src={aboutImage} />
       </div>
     </div>
   );
