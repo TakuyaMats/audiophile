@@ -101,11 +101,17 @@
 
 @media (max-width: 420px) {
     .about {
+        height: 95vh;
         padding: 0;
     }
 
     .about-image {
+        height: auto;
         padding: 5%;
+    }
+
+    .about-image img {
+        height: inherit;
     }
 
     .about-description h2 {
