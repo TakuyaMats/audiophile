@@ -5,6 +5,7 @@ import Hero from "./Hero.js";
 import Categories from "./Categories.js";
 import Products from "./Products";
 import About from "./About";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Categories />
       <Products />
       <About />
+      <Footer />
     </div>
   );
 };
