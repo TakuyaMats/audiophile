@@ -1,7 +1,7 @@
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 80vh;
+    height: 100vh;
     padding: 5vh 25vh 5vh 25vh;
     gap: 5vh;
 }
